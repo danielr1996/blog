@@ -193,6 +193,9 @@ To load the selected theme include the following javascript right after the `<li
 
 And that's it. Now you have a dark/light mode switch which can easily be extend to switch between an arbitraty number of different themes.
 
+What's your opinion on this approach? Let me know in the comments.
+
+
 # Sources
 [stackoverflow.com: Replacing css file on the fly with javscript](https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page)
 

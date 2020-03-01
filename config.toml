@@ -1,10 +1,11 @@
 languageCode = "en-us"
 title = "Just my two cents"
 theme = "ananke"
+googleAnalytics="UA-159429323-1"
 
 [params]
-  favicon = ""
-  description = "Just my 2 cents about programming and computer related stuff."
-  github = "https://github.com/danielr1996"
-  stackoverflow = "https://stackoverflow.com/users/3340372/danielr1996"
+    description = "Just my 2 cents about programming and computer related stuff."
+    github = "https://github.com/danielr1996"
+    stackoverflow = "https://stackoverflow.com/users/3340372/danielr1996"
+    email = "danielrichter@posteo.de"
     commentoEnable = true
