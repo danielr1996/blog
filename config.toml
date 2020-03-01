@@ -9,3 +9,8 @@ googleAnalytics="UA-159429323-1"
     stackoverflow = "https://stackoverflow.com/users/3340372/danielr1996"
     email = "danielrichter@posteo.de"
     commentoEnable = true
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
