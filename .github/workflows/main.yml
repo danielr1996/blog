@@ -1,0 +1,45 @@
+name: Pipeline
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v1  # v2 does not have submodules option now
+        with:
+          submodules: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.65.3'
+          # extended: true
+      - name: Build
+        run: HUGO_ENV=production hugo --minify
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: public
+          path: public
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: public
+          path: public
+      - name: ls
+        run: ls
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: timeattack-dani

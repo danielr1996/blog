@@ -1,0 +1,10 @@
+languageCode = "en-us"
+title = "Just my two cents"
+theme = "ananke"
+
+[params]
+  favicon = ""
+  description = "Just my 2 cents about programming and computer related stuff."
+  github = "https://github.com/danielr1996"
+  stackoverflow = "https://stackoverflow.com/users/3340372/danielr1996"
+    commentoEnable = true

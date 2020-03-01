@@ -1,0 +1,27 @@
+{
+  "name": "@danielr1996/blog",
+  "version": "1.0.0",
+  "description": "My private blog",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielr1996/blog.git"
+  },
+  "keywords": [
+    "hugo",
+    "blog"
+  ],
+  "author": "Daniel Richter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielr1996/blog/issues"
+  },
+  "homepage": "https://github.com/danielr1996/blog#readme",
+  "dependencies": {
+    "firebase-tools": "^7.14.0"
+  }
+}
